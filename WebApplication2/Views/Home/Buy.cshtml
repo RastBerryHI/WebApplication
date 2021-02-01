@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml"; // Подключение мастер страницы
+}
+
+<div>
+    <h3>Оформление Покупки</h3>
+
+    <br />
+
+    <form method="post" action="">
+
+        <input type="hidden" name="PhoneId" value="@ViewBag.Id" />
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>ФИО</td>
+                    <td><input type="text" name="FIO" /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="Email"</td>
+                </tr>
+                <tr>
+                    <td>Адресс</td>
+                    <td><input type="text" name="Adress"</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Оформить заказ" /></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+</div>
